@@ -38,3 +38,67 @@ button{
     height: 20px;
     margin: 10px;
 }
+.top-image{
+    width: 100%;
+    height: 100%;
+}
+.surf-part{
+    display: inline-flex;
+    width: 100%;
+    height: 100%;
+    
+}
+.surf-image{
+    width: 100%;
+    height: 60%;
+    border-radius: 20px;
+
+}
+.surf-description{
+    width: 100%;
+    height: 100%;
+    background-color: #FDF0EA;
+    border-radius: 20px;
+    padding: 47px;
+    
+}
+.camelride-part{
+    display: inline-flex;
+    width: 100%;
+    height: 100%;
+    
+}
+.camelride-image{
+    width: 100%;
+    height: 60%;
+    border-radius: 20px;
+
+}
+.camelride-description{
+    width: 100%;
+    height: 100%;
+    background-color: #FDF0EA;
+    border-radius: 20px;
+    padding: 47px;
+    
+}
+.tour-part{
+    display: inline-flex;
+    width: 100%;
+    height: 100%;
+    
+}
+.tour-image{
+    width: 100%;
+    height: 50%;
+    border-radius: 20px;
+
+}
+.tour-description{
+    width: 100%;
+    height: 100%;
+    background-color: #FDF0EA;
+    border-radius: 20px;
+    padding: 47px;
+    
+}
