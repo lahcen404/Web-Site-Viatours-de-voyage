@@ -1,0 +1,206 @@
+*{
+    font-family: 'Inter', sans-serif;
+}
+body{
+    margin: 0%;}
+
+header{
+    background-color: #FDF0EA;
+    display: inline-flex;
+    width: 100%;
+}
+ul{
+    list-style-type: none;
+    display: inline-flex;
+    margin-top: 20px;
+    gap: 30px;
+}
+li{
+margin-right: 20px;
+}
+a{
+    text-decoration: none;
+    color: #000;
+    font-size: small;
+}
+button{
+    background-color: #f28555;
+    border-radius: 10px;
+    border-style: none;
+    margin: 10px 0px;
+    color:#fff;
+    padding: 10px;
+    font-size: large;
+}
+.logo{
+    margin-left: 10px;
+    padding: 7px;
+    width: 90px;
+    height: 20px;
+    margin: 10px;
+}
+.top-image{
+    width: 100%;
+    height: 100%;
+}
+.activities{
+    flex-wrap: wrap;
+}
+.surf-part{
+    display: inline-flex;
+    width: 100%;
+    height: 100%;
+    
+    
+}
+.surf-image{
+    width: 130%;
+    height: 70%;
+    border-radius: 20px;
+    position: relative;
+    box-shadow: 0px 0px 20px 0px #000000;
+
+}
+
+.surf-btn{
+    position: absolute;
+   top: 142%;
+   left: 40%;
+}
+.surfing-title{
+    font-size: 300%;
+    position: absolute;
+    top: 135%;
+    left: 5%;
+    color: #fff;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.surf-description{
+    width: 100%;
+    height: 100%;
+    background-color: #FDF0EA;
+    border-radius: 20px;
+    padding: 12px;
+    margin-left: 165px;
+    justify-items: center;
+    box-shadow: 0px 0px 20px 0px #000000;
+
+}
+
+.camelride-part{
+    display: inline-flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: row;
+    margin-top: -100px;
+}
+.camelride-image{
+    width: 300%; /*العرض*/
+    height: 85%;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px 0px #000000;
+
+}
+.camelride-btn{
+    position: absolute;
+    top: 230%;
+    left: 40%;
+}
+.camelride-title{
+    font-size: 270%;
+    position: absolute;
+    top: 224%;
+    left: 5%;
+    color: #fff;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.camelride-description{
+    width: 100%;
+    height: 100%;
+    background-color: #FDF0EA;
+    border-radius: 20px;
+    padding: 62px;
+    margin-left: 36%;
+    justify-items: center;
+    box-shadow: 0px 0px 20px 0px #000000;
+
+}
+.tour-part{
+    display: inline-flex;
+    width: 100%;
+    height: 100%;
+    margin-top: -60px;
+    margin-bottom: -88px;
+    
+}
+.tour-image{
+    width: 147%;
+    height:71%;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px 0px #000000;
+
+}
+.tour-btn{
+    position: absolute;
+    top: 291%;
+    left: 40%;
+    
+}
+.tour-title{
+    font-size: 270%;
+    position: absolute;
+    top: 284%;
+    left: 5%;
+    color: #fff;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.tour-description{
+    width: 100%;
+    height: 100%;
+    background-color: #FDF0EA;
+    border-radius: 30px;
+    padding: 9px;
+    margin-left: 18%;
+    justify-items: center;
+    box-shadow: 0px 0px 20px 0px #000000;
+
+}
+
+.prix ,.hotel,.time{
+    display: inline-block;
+    font-size: 120%;
+    background-color: #f28555;
+    padding: 20px;
+    border-radius: 10px;
+    align-self: center;
+    align-items: center;
+    box-shadow: 0px 0px 20px 0px #000000;
+
+}
+
+.footer{
+    background-color: #FDF0EA;
+    display:flex;
+    padding: 20px;
+    padding-right: 120px;
+    justify-content: space-evenly;
+}
+.footer-social{
+    display: block;
+    gap: 20px;
+}
+.media{
+    display: flex;
+    
+}
+.footer-logo{
+    margin-top: 5%;
+}
+
+
+@media  (max-width: 600px){
+    header{
+        flex-direction: column;
+        align-items: center;
+    }
+}
