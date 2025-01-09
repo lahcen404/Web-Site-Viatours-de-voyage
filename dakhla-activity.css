@@ -1,0 +1,40 @@
+*{
+    font-family: 'Inter', sans-serif;
+}
+body{
+    margin: 0%;
+}
+
+header{
+    background-color: #FDF0EA;
+    display: inline-flex;
+    width: 100%;
+}
+ul{
+    list-style-type: none;
+    display: inline-flex;
+    margin-top: 20px;
+}
+li{
+margin-right: 20px;
+}
+a{
+    text-decoration: none;
+    color: #000;
+    font-size: small;
+}
+button{
+    background-color: #f28555;
+    border-radius: 10px;
+    border-style: none;
+    margin: 10px 0px;
+    color:#fff;
+    padding: 10px;
+}
+.logo{
+    margin-left: 10px;
+    padding: 7px;
+    width: 90px;
+    height: 20px;
+    margin: 10px;
+}
