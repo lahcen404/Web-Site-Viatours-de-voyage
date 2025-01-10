@@ -24,13 +24,17 @@ a{
     font-size: small;
 }
 button{
-    background-color: #f28555;
+    background-color: #8b4513; 
     border-radius: 10px;
     border-style: none;
     margin: 10px 0px;
     color:#fff;
     padding: 10px;
     font-size: large;
+}
+
+button:hover {
+    background-color: #161616; 
 }
 .logo{
     margin-left: 10px;
@@ -45,6 +49,14 @@ button{
 }
 .activities{
     flex-wrap: wrap;
+}
+.icon{
+    width: 9%;
+    height: 10%;
+}
+.icon-prix{
+    width: 21%;
+    height: 10%;
 }
 .surf-part{
     display: inline-flex;
@@ -203,4 +215,5 @@ button{
         flex-direction: column;
         align-items: center;
     }
+
 }
