@@ -1,0 +1,165 @@
+body{
+    margin : 0px;
+}
+
+header{
+    width:  100%;
+    border : none 5px;
+    background-color:rgb(252, 243, 229);
+    margin: 0px;
+    display : inline-flex;
+}
+
+#a1{
+    display : inline-flex ;
+    gap : 10%;
+    margin-top: 30px;
+    justify-content: space-between;
+   
+}
+
+#button1{
+    background-color: orangered;
+    border : none ;
+    border-radius: 5px;
+    color : white ;
+    margin : 2%;
+    padding: 1%;
+    margin-left: 10%;
+}
+
+#logo{
+    margin : 25px;
+}
+
+.image-contenaire{
+    position : relative;
+    display : inline-block;
+    width: 100%;
+}
+
+.background-image{
+    width: 100%; 
+    height: 30%;
+}
+
+.word{
+    position : absolute;
+    top: 45%; 
+    left: 35%; 
+    color :white;
+    font-size: 400%;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+#sec1{
+    display: flex;
+    align-items: center;  
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-top: 3%; 
+}
+#sec1 #liste2-3 {
+    justify-self: flex-end;
+}
+
+#sec{
+     background-color: rgb(252, 243, 229);
+     width: 100%;
+     height: 100%;
+}
+
+#sec2{
+    display: flex;
+    align-items: center;  
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-top: 3%;  
+}
+#sec2 #liste4-5 {
+    justify-self: flex-end;
+}
+
+#sec3{
+    display: flex;
+    align-items: center;  
+    justify-content: flex-start; 
+    flex-wrap: wrap;
+    margin-top: 3%; 
+}
+#sec3 #liste6-7 {
+    justify-self: flex-end;
+}
+
+.images3 *{
+    width: 32%;
+    height: 100%;
+}
+
+.images2 *{
+    width: 45%;
+    height: 100%;
+}
+
+
+#liste2-3{
+    background-color: rgb(154, 78, 24);
+    color : white;
+    display: flex;
+    padding-top: 2.2%;
+    padding-bottom: 2.2%;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+#liste4-5{
+    background-color: rgb(154, 78, 24);
+    color : white;
+    padding-top: 6%;
+    padding-bottom: 6%;
+    display: inline-flex;
+    justify-content: space-evenly;
+    width: 100%;
+   
+}
+
+#liste6-7{
+    background-color: rgb(154, 78, 24);
+    color: white;
+    padding-top: 6%;
+    padding-bottom: 6%;
+    display: inline-flex;
+    justify-content: space-evenly;
+    width: 100%;
+    
+  
+}
+
+.footer{
+    background-color: #FDF0EA;
+    display:flex;
+    padding: 20px;
+    padding-right: 120px;
+    justify-content: space-evenly;
+}
+.footer-social{
+    text-align: center;
+    gap: 10px;
+}
+.media{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.destination{
+    display: flex;
+}
+
+@media only screen and (max-width: 600px) {
+    .destination{
+        flex-direction: column;
+    }
+  }
