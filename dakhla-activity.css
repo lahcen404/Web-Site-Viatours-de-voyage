@@ -35,6 +35,8 @@ button{
 
 button:hover {
     background-color: #161616; 
+    transform: scale(1.1);
+
 }
 .logo{
     margin-left: 10px;
@@ -74,15 +76,17 @@ button:hover {
 
 }
 
+
 .surf-btn{
     position: absolute;
-   top: 142%;
+   top: 145%;
    left: 40%;
+   background-color: linear-gradient(red, yellow)
 }
 .surfing-title{
     font-size: 300%;
     position: absolute;
-    top: 135%;
+    top: 138%;
     left: 5%;
     color: #fff;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -208,12 +212,127 @@ button:hover {
 .footer-logo{
     margin-top: 5%;
 }
+.icon-social{
+    position: relative;
+    top: 4px;
+}
 
-
-@media  (max-width: 600px){
+@media  (max-width: 800px){
     header{
         flex-direction: column;
         align-items: center;
+    }
+    ul{
+        flex-direction: column;
+        align-items: center;
+    }
+    .surf-part{
+        flex-direction: column;
+        width: 76%;
+        
+    }
+    .surf-image{
+        width: 130%;
+        height: 233px;
+        border: 3px solid #000; 
+    }
+    .surfing-title{
+        font-size: 300%;
+        position: absolute;
+        top: 70%;
+        left: 5%;
+        color: #fff;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+    .surf-btn{
+        position: absolute;
+        top: 75%;
+        left: 67%;
+    }
+        
+    .surf-description{
+       display: flex;
+        margin-left:14%;
+        margin-top: 12px;
+        margin-bottom: 33%;
+        border-radius: 30px;
+        
+    }
+   
+    .prix ,.hotel,.time{
+        font-size:60%;
+        padding: 10px 20px;   
+    }
+    .prix{
+        width: 10%;
+    }
+    .hotel{
+        width: 60%;
+    }
+    .time{
+        width: 37%;
+    }
+    .icon , .icon-prix{
+        display: none;
+    }
+    .camelride-part{
+        flex-direction: column;
+        width: 33%;
+    }
+    .camelride-image{
+        width: 300%;
+        height: 233px;
+    }
+    .camelride-btn{
+        position: absolute;
+        top: 119%;
+        left: 63%;
+    }
+    .camelride-title{
+        font-size: 260%;
+        position: absolute;
+        top: 115%;
+        left: 5%;
+        color: #fff;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+    .camelride-description{
+        display:flex;
+        border-radius: 30px;
+        margin-left:20%;
+        margin-top: 12px;
+        margin-bottom: 50%;
+       padding:10px 190px 10px 15px  ;
+       justify-content: space-between; 
+        
+    }
+    .tour-part{
+        flex-direction: column;
+        width: 68%;
+    }
+    .tour-image{
+        width: 147%;
+        height: 233px;
+    }
+   .tour-btn{
+        position: absolute;
+        top: 161%;
+        left: 63%;
+    }
+    .tour-title{
+        font-size: 220%;
+        position: absolute;
+        top: 158%;
+        left: 5%;
+        color: #fff;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+    .tour-description{
+        display: flex;
+        margin-left:14%;
+        margin-top: 12px;
+        margin-bottom: 33%;
+        border-radius: 30px;
     }
 
 }
