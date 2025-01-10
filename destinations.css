@@ -1,0 +1,195 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    margin: 0%;
+    padding: 0%;
+}
+/*____________header___________*/
+header{
+    background-color: antiquewhite;
+    display: flex;
+    gap: 30px;
+    padding:22px;
+
+}
+.logo{
+width: 10%;
+height: 10%;
+margin-top: 5px;
+margin-left: 10px;
+}
+ul{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    list-style-type: none;
+}
+.link{
+    text-decoration: none;
+    color: #000;
+}
+#btn1{
+    padding: 5px;
+    margin: 5px 0px;
+    border-radius: 15px;
+    border-style: none;
+    background-color: rgb(207, 90, 7);
+    color: white;
+}/*  object-fit: cover;/* Cela fait en sorte que l'image remplisse son conteneur sans déformation*/
+/*_______main_____*/
+
+/*_________premier section__________*/
+.hero {
+    background: url('images2/image-voyage.jpg') no-repeat center center/cover;
+    color: white;
+    position: relative;
+    padding: 50px 0;
+    height: 200px;
+}
+.hero h2{
+    position: absolute;
+    font-size: 260%;
+    top: 59%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hero .highlight {
+    
+    color: #ff6600;
+   
+}
+
+/*_______desièmme section_______*/
+.destinations {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+    background-color: #f8f8f8;
+}
+.destination {
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    width: 220px;
+    background-color: #fff;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+}
+.destination img {
+    max-width: 100%;
+    height: 50%;
+    border-bottom: 2px solid #ff6600;
+    border-radius: 10px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
+}
+.destination button {
+    padding: 5px 10px;
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.destination h3{
+    background-color: rgba(236, 123, 10, 0.861);
+    display: inline-block; /* Ajuste la largeur pour s'adapter au texte */
+    border-radius: 10px;
+    padding: 6px;
+    color: black;
+}
+
+/*____________footer____________*/
+.footer{
+    display: flex;
+    justify-content:space-around;
+    background-color: bisque;
+    padding-top: 20px;
+    flex-wrap: wrap;
+}
+.footer-logo{
+    justify-items: start;
+}
+
+.footer-logo img {
+    width: 150px; /* Ajustez la taille de l'image du logo */
+    height: auto;
+    margin-top: 55px;
+}
+
+.social-media {
+    text-align: center;
+}
+
+.social-media h3 {
+    color: #161311;
+    margin-bottom: 10px;
+}
+
+.media {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.media-logo {
+    width: 30px; /* Taille des icônes des media */
+    height: 30px;
+    margin-right: 10px; /* Espace entre l'icône et le texte */
+}
+
+.media h5 {
+    font-size: 14px;
+    color: #333;
+    margin: 0;
+}
+
+.map {
+    text-align: center;
+}
+
+.map p {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.map img {
+    width: 250px; /* Ajustez la taille de l'image de la carte */
+    height: auto;
+    border: 1px solid #ccc;
+    border-radius: 5px; /* Coins arrondis */
+}
+/*__________responsive_______________________________________*/
+@media (max-width:700px){
+    header{
+        flex-direction: column;
+        align-items: center;
+    }
+    ul{
+        flex-direction: column;
+    }
+    .logo{
+        margin-top: 10px;
+        width: 50%;
+    }
+    .footer {
+        flex-direction: column; /* Aligner les éléments verticalement */
+        text-align: center;
+    }
+
+    .footer-logo, .social-media,.map {
+        margin-bottom: 20px; /* Espacement entre les sections */
+    }
+
+    .media {
+        justify-content: center; /* Centrer les icônes */
+        flex-direction: column;
+    }
+}
