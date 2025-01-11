@@ -1,329 +1,207 @@
-*{
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: 'Inter', sans-serif;
 }
-body{
-    margin: 0%;}
 
-header{
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
+
+header {
     background-color: #FDF0EA;
     display: inline-flex;
     width: 100%;
 }
-ul{
+.logo{
+    margin-left: 10px;
+    padding: 8px;
+    width: 90px;
+    height: 40px;
+    margin: 8px;
+}
+
+
+ul {
     list-style-type: none;
     display: inline-flex;
     margin-top: 20px;
     gap: 30px;
 }
-li{
-margin-right: 20px;
+
+li {
+    margin-right: 20px;
 }
-a{
+
+a {
     text-decoration: none;
     color: #000;
     font-size: small;
 }
-button{
-    background-color: #8b4513; 
+
+button {
+    background-color: #8b4513;
+    border: none;
     border-radius: 10px;
-    border-style: none;
-    margin: 10px 0px;
-    color:#fff;
-    padding: 10px;
-    font-size: large;
+    color: white;
+    padding: 10px 15px;
+    font-size: medium;
+    transition: transform 0.2s, background-color 0.2s;
 }
 
 button:hover {
-    background-color: #161616; 
+    background-color: #161616;
     transform: scale(1.1);
+}
 
-}
-.logo{
-    margin-left: 10px;
-    padding: 7px;
-    width: 90px;
-    height: 20px;
-    margin: 10px;
-}
-.top-image{
+.top-image {
     width: 100%;
-    height: 100%;
+    height: auto;
 }
-.activities{
+
+.activities {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 20px;
+}
+
+/* surf section */
+.surf-part,
+.camelride-part,
+.tour-part {
+    display: flex;
+    align-items: center;
+    gap: 20px;
     flex-wrap: wrap;
 }
-.icon{
-    width: 9%;
-    height: 10%;
-}
-.icon-prix{
-    width: 21%;
-    height: 10%;
-}
-.surf-part{
-    display: inline-flex;
-    width: 100%;
-    height: 100%;
-    
-    
-}
-.surf-image{
-    width: 130%;
-    height: 70%;
-    border-radius: 20px;
+
+.surf-images,
+.camelride-images,
+.tour-images {
     position: relative;
+    flex: 1 1 50%;
+}
+
+.surf-image,
+.camelride-image,
+.tour-image {
+    width: 90%;
+    border-radius: 20px;
     box-shadow: 0px 0px 20px 0px #000000;
-
+    object-fit: cover;
 }
 
-
-.surf-btn{
+.surfing-title,
+.camelride-title,
+.tour-title {
     position: absolute;
-   top: 145%;
-   left: 40%;
-   background-color: linear-gradient(red, yellow)
-}
-.surfing-title{
-    font-size: 300%;
-    position: absolute;
-    top: 138%;
+    bottom: 10%;
     left: 5%;
-    color: #fff;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
 }
-.surf-description{
-    width: 100%;
-    height: 100%;
+
+.surf-btn,
+.camelride-btn,
+.tour-btn {
+    position: absolute;
+    bottom: 5%;
+    right: 20%;
+}
+
+/* Desscription boxes */
+.surf-description,
+.camelride-description,
+.tour-description {
+    flex: 1 1 40%;
     background-color: #FDF0EA;
     border-radius: 20px;
-    padding: 12px;
-    margin-left: 165px;
-    justify-items: center;
-    box-shadow: 0px 0px 20px 0px #000000;
-
-}
-
-.camelride-part{
-    display: inline-flex;
-    width: 100%;
-    height: 100%;
-    flex-direction: row;
-    margin-top: -100px;
-}
-.camelride-image{
-    width: 300%; /*العرض*/
-    height: 85%;
-    border-radius: 20px;
-    box-shadow: 0px 0px 20px 0px #000000;
-
-}
-.camelride-btn{
-    position: absolute;
-    top: 230%;
-    left: 40%;
-}
-.camelride-title{
-    font-size: 270%;
-    position: absolute;
-    top: 224%;
-    left: 5%;
-    color: #fff;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-.camelride-description{
-    width: 100%;
-    height: 100%;
-    background-color: #FDF0EA;
-    border-radius: 20px;
-    padding: 62px;
-    margin-left: 36%;
-    justify-items: center;
-    box-shadow: 0px 0px 20px 0px #000000;
-
-}
-.tour-part{
-    display: inline-flex;
-    width: 100%;
-    height: 100%;
-    margin-top: -60px;
-    margin-bottom: -88px;
-    
-}
-.tour-image{
-    width: 147%;
-    height:71%;
-    border-radius: 20px;
-    box-shadow: 0px 0px 20px 0px #000000;
-
-}
-.tour-btn{
-    position: absolute;
-    top: 291%;
-    left: 40%;
-    
-}
-.tour-title{
-    font-size: 270%;
-    position: absolute;
-    top: 284%;
-    left: 5%;
-    color: #fff;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-.tour-description{
-    width: 100%;
-    height: 100%;
-    background-color: #FDF0EA;
-    border-radius: 30px;
-    padding: 9px;
-    margin-left: 18%;
-    justify-items: center;
-    box-shadow: 0px 0px 20px 0px #000000;
-
-}
-
-.prix ,.hotel,.time{
-    display: inline-block;
-    font-size: 120%;
-    background-color: #f28555;
     padding: 20px;
-    border-radius: 10px;
-    align-self: center;
-    align-items: center;
     box-shadow: 0px 0px 20px 0px #000000;
-
-}
-
-.footer{
-    background-color: #FDF0EA;
-    display:flex;
-    padding: 20px;
-    padding-right: 120px;
-    justify-content: space-evenly;
-}
-.footer-social{
-    display: block;
-    gap: 20px;
-}
-.media{
     display: flex;
-    
-}
-.footer-logo{
-    margin-top: 5%;
-}
-.icon-social{
-    position: relative;
-    top: 4px;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
 }
 
-@media  (max-width: 800px){
+.prix,
+.hotel,
+.time {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #f28555;
+    padding: 10px 15px;
+    border-radius: 10px;
+    font-size: medium;
+    font-weight: bold;
+    box-shadow: 0px 0px 10px 0px #000000;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
+/* footer */
+.footer {
+    background-color: #FDF0EA;
+    display: flex;
+    padding: 50px;
+    padding-right: 120px;
+    justify-content: space-between;
+}
+
+.footer-social {
+    display: block;
+    gap: 60px;
+}
+
+.media {
+    display: flex;
+}
+
+.footer-logo {
+    margin-top: 4%;
+    
+}
+
+.icon-social {
+    position: relative;
+    top: -16px;
+}
+
+/* ------------------------------------------------------------------ */
+
+/* Responsive  */
+@media (max-width: 768px) {
     header{
         flex-direction: column;
         align-items: center;
     }
-    ul{
+    .activities {
+        gap: 30px;
+    }
+
+    .surf-part,
+    .camelride-part,
+    .tour-part {
         flex-direction: column;
         align-items: center;
+        margin-bottom: 14%;
     }
-    .surf-part{
-        flex-direction: column;
-        width: 76%;
-        
+
+    .surf-description,
+    .camelride-description,
+    .tour-description {
+        width: 80%;
     }
-    .surf-image{
-        width: 130%;
-        height: 233px;
-        border: 3px solid #000; 
-    }
-    .surfing-title{
-        font-size: 300%;
-        position: absolute;
-        top: 70%;
-        left: 5%;
-        color: #fff;
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    }
-    .surf-btn{
-        position: absolute;
-        top: 75%;
-        left: 67%;
-    }
-        
-    .surf-description{
-       display: flex;
-        margin: 12px 0 33% 16%;
-        border-radius: 30px;
-    }
-   
-    .prix ,.hotel,.time{
-        font-size:60%;
-        padding: 10px 20px;   
-    }
-    .prix{
-        width: 10%;
-    }
-    .hotel{
-        width: 60%;
-    }
-    .time{
-        width: 37%;
-    }
-    .icon , .icon-prix{
-        display: none;
-    }
-    .camelride-part{
-        flex-direction: column;
-        width: 33%;
-    }
-    .camelride-image{
-        width: 300%;
-        height: 233px;
-    }
-    .camelride-btn{
-        position: absolute;
-        top: 119%;
-        left: 63%;
-    }
-    .camelride-title{
-        font-size: 260%;
-        position: absolute;
-        top: 115%;
-        left: 5%;
-        color: #fff;
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    }
-    .camelride-description{
-        display:flex;
-        border-radius: 30px;
-        margin: 12px 0 50% 44%;
-       padding:10px 190px 10px 17px  ;        
-    }
-    .tour-part{
-        flex-direction: column;
-        width: 68%;
-    }
-    .tour-image{
-        width: 147%;
-        height: 233px;
-    }
-   .tour-btn{
-        position: absolute;
-        top: 161%;
-        left: 63%;
-    }
-    .tour-title{
-        font-size: 220%;
-        position: absolute;
-        top: 158%;
-        left: 5%;
-        color: #fff;
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    }
-    .tour-description{
-        display: flex;
-        margin: 12px 0 33% 23%;
-        border-radius: 30px;
-    }
-    
 }
