@@ -3,22 +3,29 @@
     <head>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="dakhla-activity.css">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Viatours</title>
+        <style>.mapouter{position:relative;text-align:right;width:100%;height:216px;}
+        .gmap_canvas {overflow:hidden;background:none!important;width:100%;height:226px;}
+        .gmap_iframe {height:228px!important;}</style>
+
     </head>
     <body>
         <header>
                 <img src="images-dakhla/Logo.svg-removebg-preview.png" class= "logo" alt>
                <nav> 
                     <ul>
-                        <li><a href="#">Destinations</a></li>
-                        <li><a href="#">Activites</a></li>
-                        <li><a href="#">Contact</a></li>   
-                        <li><a href="#">Créer un compte</a></li>
+                        <li><a href="destinations.html">Destinations</a></li>
+                        <li><a href="#">Activites</a> <ul>
+                            <li><a href="dakhla-activity.html">Dakhla</a></li>
+                            <li><a href="marrakech-activity.html">Marrakech</a></li>
+                            <li><a href="Azilal-activity.html">Azilal</a></li>
+                            <li><a href="Chaefchaoun-activity.html">Chefchaouen</a></li>
+                        </ul></li>
+                        <li><a href="Contact-us.html">Contact</a></li>   
+                        <li><a href="Sign-up.html">Créer un compte</a></li>
                     </ul> 
               </nav> 
-                <button  class="login">Se connecter</button>
+                <button  class="login"><a href="#"></a>Se connecter</button>
         </header>
 
         <section class="top">
@@ -27,7 +34,7 @@
 
         <main>
             <section class="activites">
-                
+
                 <section class="surf-part">
                     <div class="surf-images">
                         <img src="images-dakhla/surf.webp" class="surf-image" alt="Surf picture">
@@ -73,6 +80,7 @@
             </section>
         </main>
     </body>  
+
     <footer>
         <section class="footer">
             <div class="footer-logo">
@@ -92,7 +100,7 @@
 
                     </iframe><a href="https://sprunkiphasez.com/">.</a>
                 </div>
-                    <style>.mapouter{position:relative;text-align:right;width:100%;height:216px;}.gmap_canvas {overflow:hidden;background:none!important;width:100%;height:226px;}.gmap_iframe {height:228px!important;}</style></div>
+            </div>
         </section>
     </footer>  
 </html>
