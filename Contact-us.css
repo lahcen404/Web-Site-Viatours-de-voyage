@@ -47,13 +47,6 @@ nav ul li ul li a:hover {
     background-color: #ddd;
 }
 
-
-body {
-    margin: 0;
-    overflow-x: hidden; 
-
-}
-
 header {
     background-color: #FDF0EA;
     display: inline-flex;
@@ -67,10 +60,19 @@ header {
     margin: 12px;
     margin-right: 7%;
 }
-.login{
+.login {
+    display: inline-block;
     padding: 1% 2%;
     margin-top: 1% ;
-    margin-bottom: 1%;
+    margin-bottom: 1%;  
+    font-size: 17px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #f06529;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    text-align: center;
 }
 
 
@@ -91,16 +93,13 @@ a {
     font-size: small;
 transition: transform 0.2s;}
 
-a:hover {
-    color: #f28555;
-    transform: scale(1.1);
-}
+
 
 button {
     background-color: #8b4513;
     border: none;
     border-radius: 10px;
-    box-shadow: 0px 0px 20px 0px #fdfdfd; 
+    box-shadow: 0px 0px 20px 0px #000000; 
     color: rgb(255, 255, 255);
     padding: 12px 15px;
     font-size: medium;
