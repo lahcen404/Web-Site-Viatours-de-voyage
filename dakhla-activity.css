@@ -99,10 +99,7 @@ a {
     font-size: small;
 transition: transform 0.2s;}
 
-a:hover {
-    color: #f28555;
-    transform: scale(1.1);
-}
+
 
 button {
     background-color: #8b4513;
